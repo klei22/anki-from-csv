@@ -1,6 +1,8 @@
 # CSV to Anki
 
-Anki is great, use this script to create your own flashcards straight from a csv file.
+[Anki](https://apps.ankiweb.net/) is a vetted foss flashcards tool with [spaced-repetition](https://en.wikipedia.org/wiki/Spaced_repetition); however, using the Anki gui to create cards can take a long, long time.
+
+Use this convenient `csv_to_anki.py` script to create your own flashcards straight from a csv file in a jiffy : )
 
 ## Installation
 
@@ -11,6 +13,14 @@ To install have python3 and run:
 ```
 
 This repo depends on [genanki](https://github.com/kerrickstaley/genanki).
+
+
+## Quickstart
+
+1. Create flashcards from `numbers.csv` by running:
+`python3 csv_to_anki.py numbers`
+
+2. Open the created `numbers.apkg` file iwth [Anki](https://apps.ankiweb.net/).
 
 ## Workflow
 
