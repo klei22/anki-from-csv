@@ -1,10 +1,22 @@
 # CSV to Anki
 
+Anki is great, use this script to create your own flashcards straight from a csv file.
+
+## Installation
+
+To install have python3 and run:
+
+```sh
+./install_deps.sh
+```
+
+This repo depends on [genanki](https://github.com/kerrickstaley/genanki).
+
 ## Workflow
 
-Using the `csv_to_anki.py` script is very simple, see steps below:
+Using the `csv_to_anki.py` script is very simple two step process, see steps below:
 
-### Step 1/2: Create csv with desired vocabulary, e.g. `mandarin_numbers.csv`
+### Step 1/2: Create vocabulary csv with the vocab, e.g. `mandarin_numbers.csv`
 
 With vim/emacs or preferred editor create a csv file.
 
@@ -39,14 +51,14 @@ Make sure to omit the extension `.csv`
 
 This last example will create a `mandarin_numbers.apkg` which you can open with any Anki app : )
 
-### Modifications
+## Modifications
 
 There are just two sections you'll need to modify if you'd like to add more fields or reduce to just two.
 
 We'll show below an example for moving from English to Mandarin to just English to say French.
 
 
-#### create English to French Vocab CSV
+### Create English to French Vocab CSV
 
 
 create `french_numbers.csv`
@@ -137,7 +149,7 @@ after
     my_package.write_to_file(package_name)
 ```
 
-#### run the `csv_to_anki.py` script
+### run the `csv_to_anki.py` script
 
 ```sh
 python3 csv_to_anki.py french_numbers
