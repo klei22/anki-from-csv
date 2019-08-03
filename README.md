@@ -1,8 +1,8 @@
-# CSV to Anki
+# Anki from CSV
 
 [Anki](https://apps.ankiweb.net/) is a vetted foss flashcards tool with [spaced-repetition](https://en.wikipedia.org/wiki/Spaced_repetition); however, using the Anki gui to create cards can take a long, long time.
 
-Use this convenient `csv_to_anki.py` script to create your own flashcards straight from a csv file in a jiffy : )
+Use this convenient `anki_from_csv.py` script to create your own flashcards straight from a csv file in a jiffy : )
 
 ## Installation
 
@@ -18,13 +18,13 @@ This repo depends on [genanki](https://github.com/kerrickstaley/genanki).
 ## Quickstart
 
 1. Create flashcards from `numbers.csv` by running:
-`python3 csv_to_anki.py numbers`
+`python3 anki_from_csv.py numbers`
 
 2. Open the created `numbers.apkg` file iwth [Anki](https://apps.ankiweb.net/).
 
 ## Workflow
 
-Using the `csv_to_anki.py` script is very simple two step process, see steps below:
+Using the `anki_from_csv.py` script is very simple two step process, see steps below:
 
 ### Step 1/2: Create vocabulary csv with the vocab, e.g. `mandarin_numbers.csv`
 
@@ -45,16 +45,16 @@ See example below, `mandarin_numbers.csv`:
 10,十,shí
 ```
 
-### Step 2/2: run `csv_to_anki.py` specifying vocab set
+### Step 2/2: run `anki_from_csv.py` specifying vocab set
 
 Run the following replacing `<vocab_set_basename>` with your vocab list:
 
-`python3 csv_to_anki.py <vocab_set_basename>`
+`python3 anki_from_csv.py <vocab_set_basename>`
 
 For example
 
 ```sh
-python3 csv_to_anki.py mandarin_numbers
+python3 anki_from_csv.py mandarin_numbers
 ```
 
 Make sure to omit the extension `.csv`
@@ -128,7 +128,7 @@ after:
 ```
 
 
-### modify the number of rows that `csv_to_anki.py` reads
+### modify the number of rows that `anki_from_csv.py` reads
 
 
 before
@@ -159,10 +159,10 @@ after
     my_package.write_to_file(package_name)
 ```
 
-### run the `csv_to_anki.py` script
+### run the `anki_from_csv.py` script
 
 ```sh
-python3 csv_to_anki.py french_numbers
+python3 anki_from_csv.py french_numbers
 ```
 
 and you should now have apkg called `french_numbers.apkg` ready to import to Anki from and Anki app : )
